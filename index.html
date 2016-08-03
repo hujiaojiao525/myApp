@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册表单验证</title>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<form class="register">
+    <div>
+        <label><span>手机：</span><input class="phone" type="text" class="phone"/></label>
+        <p class="meg"></p>
+    </div>
+    <div>
+        <label>
+            <span>验证码：</span><input class="img-code" type="text" style="width:100px" maxlength=4/>
+           <p id="tion"><img id="randomImg" src="https://ticwear-account.mobvoi.com/captcha/img?origin=ticwatch-service&amp;random_code=1393" alt="Ticwear助手" data-random-code="1393"></p><a href="javascript:;" class="changeImg">看不清？</a>
+        </label>
+        <p class="meg"></p>
+    </div>
+    <div>
+        <label>
+            <span></span><input class="btns" value="获取短信验证码" type="button" style="width:110px"/>
+        </label>
+    </div>
+    <div>
+        <label><span>短信验证码：</span><input type="text" class="phone_code" maxlength=6/></label>
+        <p class="meg"></p>
+    </div>
+    </div>
+    <div>
+        <label><span>请设置密码：</span><input type="password" class="pass"/></label>
+        <p class="meg"></p>
+    </div>
+    <div>
+        <label><span>请确认密码：</span><input type="password" class="passsure"/></label>
+        <p class="meg"></p>
+    </div>
+    
+    <div>
+        <label><span></span><input type="button" class="subBtn" value="立即注册" /></label>
+        
+    </div>
+</form>
+</body>
+</html>
+    <script data-main='js/main' src="lib/require.js"></script>
